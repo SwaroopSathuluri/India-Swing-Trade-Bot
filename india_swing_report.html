@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>India Swing Report</title>
+  <style>
+    :root { --bg:#f5efe2; --panel:rgba(255,252,246,.93); --ink:#1b2d3a; --muted:#5e6f79; --line:#dacfbf; --green:#0f7b64; --amber:#b97824; --blue:#254f74; }
+    * { box-sizing:border-box; }
+    body { margin:0; color:var(--ink); font-family:Georgia, "Times New Roman", serif; background:linear-gradient(180deg,#fbf6ec 0%,var(--bg) 100%); }
+    .wrap { max-width:1280px; margin:0 auto; padding:28px 18px 42px; }
+    .hero, .panel { background:var(--panel); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(27,45,58,.08); padding:22px; }
+    .hero { background:linear-gradient(135deg, rgba(16,48,64,.98), rgba(19,95,104,.92)); color:#fff8ef; }
+    h1 { margin:0 0 10px; font-size:clamp(2rem,4vw,3rem); }
+    .hero p { margin:0; line-height:1.55; color:rgba(255,248,239,.88); }
+    .panel { margin-top:20px; }
+    .panel h2 { margin:0 0 10px; }
+    table { width:100%; border-collapse:collapse; margin-top:12px; }
+    th, td { padding:10px; border-bottom:1px solid var(--line); text-align:left; }
+    th { background:#ece4d3; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <h1>India Swing Report</h1>
+      <p>Starter HTML report created immediately so the repo has a visible deliverable. Automated market-scanned rows will populate after the workflow file is added and GitHub Actions can run the scanner.</p>
+    </section>
+    <section class="panel">
+      <h2>Planned Universes</h2>
+      <table>
+        <thead>
+          <tr><th>Universe</th><th>Benchmark</th><th>Use Case</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>india-largecap</td><td>Nifty 50</td><td>Broad swing scan across liquid NSE leaders</td></tr>
+          <tr><td>banking</td><td>Nifty Bank</td><td>Focused scan for banks and finance names</td></tr>
+          <tr><td>it</td><td>Nifty IT</td><td>Focused scan for Indian technology stocks</td></tr>
+        </tbody>
+      </table>
+    </section>
+    <section class="panel">
+      <h2>What Will Populate Automatically</h2>
+      <table>
+        <thead>
+          <tr><th>Field</th><th>Description</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Setup</td><td>Breakout, Pullback, Trend Continuation, or Avoid</td></tr>
+          <tr><td>Score</td><td>Composite swing score based on trend and momentum</td></tr>
+          <tr><td>ATR %</td><td>Volatility filter to avoid overly wild setups</td></tr>
+          <tr><td>RS vs Benchmark</td><td>Relative strength against the universe benchmark</td></tr>
+          <tr><td>Targets / Stop</td><td>ATR-based levels for practical trade planning</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </div>
+</body>
+</html>
