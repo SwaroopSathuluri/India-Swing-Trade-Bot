@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>India Swing Scanner</title>
+  <style>
+    :root { --bg:#f5efe2; --panel:rgba(255,252,246,.93); --ink:#1b2d3a; --muted:#5e6f79; --line:#dacfbf; --green:#0f7b64; --amber:#b97824; --blue:#254f74; }
+    * { box-sizing:border-box; }
+    body { margin:0; color:var(--ink); font-family:Georgia, "Times New Roman", serif; background:radial-gradient(circle at 12% 0%, rgba(15,123,100,.12), transparent 28%), radial-gradient(circle at 88% 10%, rgba(185,120,36,.12), transparent 25%), linear-gradient(180deg,#fbf6ec 0%,var(--bg) 100%); }
+    .wrap { max-width:1280px; margin:0 auto; padding:28px 18px 42px; }
+    .hero { background:linear-gradient(135deg, rgba(16,48,64,.98), rgba(19,95,104,.92)); color:#fff8ef; border-radius:24px; padding:30px; box-shadow:0 20px 45px rgba(27,45,58,.18); }
+    h1 { margin:0 0 10px; font-size:clamp(2rem,4vw,3.4rem); }
+    .hero p { margin:0; line-height:1.55; max-width:920px; color:rgba(255,248,239,.88); }
+    .metrics, .cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:14px; margin-top:20px; }
+    .metric, .card, .note { background:var(--panel); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(27,45,58,.08); }
+    .metric, .card, .note { padding:18px; }
+    .label { color:var(--muted); text-transform:uppercase; letter-spacing:.08em; font-size:.78rem; }
+    .value { font-size:1.8rem; margin-top:8px; }
+    .card h2 { margin:0 0 10px; font-size:1.2rem; }
+    ul { margin:10px 0 0; padding-left:18px; }
+    .note { margin-top:20px; }
+    .btn { display:inline-block; margin-top:14px; padding:10px 14px; border-radius:999px; background:#103040; color:#fff8ef; text-decoration:none; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <h1>India Swing Scanner</h1>
+      <p>GitHub-ready swing-trading scanner for Indian equities using open Yahoo Finance data. This starter report page is live now; dynamic daily refresh will work once the GitHub Actions workflow is added.</p>
+    </section>
+    <section class="metrics">
+      <article class="metric"><div class="label">Status</div><div class="value">Starter Report</div><div>Static HTML is ready in the repository.</div></article>
+      <article class="metric"><div class="label">Universes</div><div class="value">3</div><div>`india-largecap`, `banking`, and `it`.</div></article>
+      <article class="metric"><div class="label">Data Source</div><div class="value">Open Data</div><div>Powered by `yfinance` for NSE symbols.</div></article>
+      <article class="metric"><div class="label">Next Step</div><div class="value">Enable Workflow</div><div>Add workflow permission to automate daily publishing.</div></article>
+    </section>
+    <section class="cards">
+      <article class="card">
+        <h2>Scanner Logic</h2>
+        <ul>
+          <li>20 EMA, 50 SMA, and 200 SMA trend alignment</li>
+          <li>RSI and MACD confirmation</li>
+          <li>ATR-based risk and targets</li>
+          <li>Relative strength versus Nifty or sector benchmark</li>
+        </ul>
+      </article>
+      <article class="card">
+        <h2>Included Files</h2>
+        <ul>
+          <li>`india_swing_scanner.py`</li>
+          <li>`universe_lists.py`</li>
+          <li>`generate_local_report.cmd`</li>
+          <li>`README.md` and `requirements.txt`</li>
+        </ul>
+      </article>
+      <article class="card">
+        <h2>Benchmarks</h2>
+        <ul>
+          <li>`^NSEI` for large-cap</li>
+          <li>`^NSEBANK` for banking</li>
+          <li>`^CNXIT` for IT</li>
+        </ul>
+      </article>
+    </section>
+    <section class="note">
+      <div class="label">Note</div>
+      <p>This page is a live placeholder so the repository already has a report artifact. Once workflow permissions are fixed, I can add the scheduled GitHub Actions publish flow and replace this with an automatically refreshed scanner report.</p>
+      <a class="btn" href="./india_swing_report.html">Open Report Copy</a>
+    </section>
+  </div>
+</body>
+</html>
